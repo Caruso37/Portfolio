@@ -1,0 +1,322 @@
+/*Estilo geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #000000;
+    height: 100vh;
+}
+
+.cabecalho{
+    max-width: 1280px;
+    margin-left: 50px;
+}
+
+.flexivel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.botao_contacto button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #AF8260;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 4.s;
+}
+
+.botao_contacto a {
+    color: #08090A;
+    text-decoration: none;
+    text-align: center;
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px #7e5d44;
+    transform: scale(1.05);
+}
+
+h2.titulo2{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 120px;
+}
+
+h2.titulo2 span{
+    color: #AF8260;
+}
+
+/*Estilo do cabeçalho*/
+
+header{
+    padding: 40px 4%;
+}
+
+header >.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img{
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: 4.s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.09);
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+main{
+    max-width: 1280px;
+    margin: 90px 100px 0px 100px;
+}
+
+section.corpo {
+    padding: 40px 4%;
+}
+
+section.corpo .flexivel{
+    align-items: center;
+    justify-content: center;
+}
+
+.intro {
+    padding: 0 2rem;
+}
+
+.corpo h1{
+    color: #fff;
+    font-size:35px ;
+    line-height: 40px;
+}
+
+.corpo .txt h1 span{
+    color: #AF8260;
+}
+
+.corpo .txt p{
+    color: #fff;
+    margin: 35px 0;
+}
+
+.corpo .img{
+    width: 300px;
+    height: 300px;
+}
+
+
+.corpo img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+/*Estilo das minhas especialidades*/
+
+section .especialidade{
+
+    /*padding: 40px 4%;*/
+    background-color: #1b2228 !important;
+}
+
+.especialidade .especialidades{
+    color: #fff;
+    padding: 35px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: 2s;
+}
+
+.especialidade .especialidades:hover{
+    transform: scale(1.09);
+    box-shadow: 0 0 20px #7d7d7d;
+}
+
+.especialidade .especialidades i{
+    font-size: 60px;
+    color:#AF8260;
+}
+
+.especialidade .especialidades h3{
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/*Estilo do sobre*/
+
+section .flexivel{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+section .sobre .flexivel{
+    align-items: center;
+}
+
+.texto_sobre{
+    color: #fff;
+}
+
+.texto_sobre h2{
+   font-size: 29px;
+   line-height: 40px ;
+   margin-bottom: 30px;
+   margin-top: 110px;
+}
+
+.texto_sobre h2 span{
+    color: #AF8260;
+    display: block;
+ }
+
+ .texto_sobre p{
+    margin: 20px 0;
+    text-align: justify;
+ }
+
+.sobre img{
+    width: 150px;
+    height: 350px;
+    margin-top: 110px;
+}
+
+.texto_sobre .botao_social button{
+    width: 45px;
+    height: 45px;
+    border-radius: 50% ;
+    border: none;
+    background-color: #AF8260;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 2s;
+}
+
+/* Estilo do portifolio*/
+
+section.Meu_portifolio{
+    margin-top: 50px;
+    padding: 20px 4%;
+}
+
+section.Meu_portifolio .flexivel{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+section.Meu_portifolio h2{
+    margin-bottom: 30px;
+}
+
+.img_portifolio{
+    width: 320px;
+    height: 400px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img_portifolio:hover{
+    background-position: 100% 100%;
+}
+
+img_portifolio img {
+    width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #AF8260;
+    border-radius: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .9s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.wrap {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wrap .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.wrap span {
+    border: #b3947c 2px solid;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+/*Estilo do footer*/
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+div .foo_img {
+    width: 50px;
+    height: 50px;
+
+}
+
+footer img {
+    width: 100%;
+}
+
+footer a, i, span {
+    color: #fff;
+}
+
+footer .foo {
+    display: flex;
+    gap: 20px;
+    align-content: space-between;
+}
